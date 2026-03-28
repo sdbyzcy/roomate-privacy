@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>RooMate – Gizlilik Politikası</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f7f8fc;
+      color: #1a1a2e;
+      line-height: 1.7;
+    }
+
+    header {
+      background: linear-gradient(135deg, #6C63FF 0%, #48CAE4 100%);
+      color: white;
+      padding: 48px 24px 40px;
+      text-align: center;
+    }
+
+    header .logo {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+    }
+
+    header p {
+      margin-top: 8px;
+      opacity: 0.85;
+      font-size: 15px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.2);
+      border-radius: 20px;
+      padding: 4px 14px;
+      font-size: 13px;
+      margin-top: 12px;
+    }
+
+    main {
+      max-width: 760px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 28px 28px 24px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .card h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #6C63FF;
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .card h2 .icon {
+      width: 32px;
+      height: 32px;
+      background: #f0eeff;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .card p, .card li {
+      font-size: 14.5px;
+      color: #4a4a68;
+      margin-bottom: 8px;
+    }
+
+    .card ul {
+      padding-left: 20px;
+    }
+
+    .card li {
+      margin-bottom: 6px;
+    }
+
+    .highlight {
+      background: #f0eeff;
+      border-left: 4px solid #6C63FF;
+      border-radius: 0 10px 10px 0;
+      padding: 14px 18px;
+      margin-top: 12px;
+      font-size: 14px;
+      color: #444;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 13px;
+      color: #999;
+      padding: 20px;
+    }
+
+    footer a {
+      color: #6C63FF;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">🏠</div>
+  <h1>RooMate</h1>
+  <p>Gizlilik Politikası</p>
+  <span class="badge">Son güncelleme: Mart 2026</span>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2><span class="icon">👋</span> Giriş</h2>
+    <p>
+      RooMate ("uygulama"), SBC Labs tarafından geliştirilmiştir.
+      Bu politika, uygulamayı kullanırken hangi kişisel verilerin toplandığını,
+      nasıl kullanıldığını ve korunduğunu açıklamaktadır.
+    </p>
+    <p>
+      Uygulamayı kullanarak bu politikayı kabul etmiş sayılırsınız.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📋</span> 1. Toplanan Veriler</h2>
+    <p>Hizmet sunabilmek için aşağıdaki veriler toplanmaktadır:</p>
+    <ul>
+      <li>Telefon numarası (kimlik doğrulama amacıyla)</li>
+      <li>İsim ve profil fotoğrafı (isteğe bağlı)</li>
+      <li>Doğum tarihi (isteğe bağlı)</li>
+      <li>Oda üyelikleri ve görev geçmişi</li>
+      <li>FCM token (push bildirimleri için)</li>
+      <li>Uygulama kullanım verileri (görev tamamlama, puan bilgileri)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🎯</span> 2. Verilerin Kullanımı</h2>
+    <p>Toplanan veriler yalnızca şu amaçlarla kullanılır:</p>
+    <ul>
+      <li>Kullanıcı kimliğini doğrulamak</li>
+      <li>Oda üyelerine bildirim göndermek</li>
+      <li>Görev rotasyonu ve puanlama sistemini yönetmek</li>
+      <li>Kullanıcı deneyimini kişiselleştirmek</li>
+    </ul>
+    <div class="highlight">
+      ⚠️ Verileriniz hiçbir koşulda üçüncü taraflarla paylaşılmaz veya satılmaz.
+    </div>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔒</span> 3. Veri Güvenliği</h2>
+    <p>
+      Tüm veriler Google Firebase altyapısında güvenli biçimde saklanır.
+      Firebase, SOC 2 Type II ve ISO 27001 sertifikalarına sahiptir.
+    </p>
+    <p>
+      Verilerinize yalnızca sizin ve aynı odadaki üyelerin erişimi bulunmaktadır.
+      Firestore güvenlik kuralları ile yetkisiz erişim engellenmektedir.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🗑️</span> 4. Verilerin Saklanma Süresi</h2>
+    <p>
+      Hesabınızı sildiğinizde, kişisel verileriniz (isim, fotoğraf, telefon numarası)
+      sistemden kaldırılır. Görev geçmişi ve puan verileri, oda üyelerinin performans
+      geçmişini korumak amacıyla anonim hâlde saklanabilir.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">👶</span> 5. Çocukların Gizliliği</h2>
+    <p>
+      RooMate, 13 yaş altındaki çocuklara yönelik değildir.
+      Bu yaş grubuna ait kullanıcı verisi bilinçli olarak toplanmamaktadır.
+      Böyle bir durumun farkına varırsanız lütfen bizimle iletişime geçin.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">🔔</span> 6. Bildirimler</h2>
+    <p>
+      Uygulamaya kayıt olarak FCM push bildirimleri almayı kabul etmiş sayılırsınız.
+      Bildirimleri cihazınızın ayarlarından istediğiniz zaman devre dışı bırakabilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">⚖️</span> 7. KVKK Kapsamındaki Haklarınız</h2>
+    <p>6698 sayılı Kişisel Verilerin Korunması Kanunu kapsamında haklarınız:</p>
+    <ul>
+      <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+      <li>İşlenmişse bilgi talep etme</li>
+      <li>Düzeltilmesini veya silinmesini talep etme</li>
+      <li>İtiraz etme</li>
+    </ul>
+    <p style="margin-top:12px;">
+      Bu haklarınızı kullanmak için aşağıdaki e-posta adresine ulaşabilirsiniz.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2><span class="icon">📬</span> 8. İletişim</h2>
+    <p>Gizlilik politikamız hakkında sorularınız için:</p>
+    <ul>
+      <li><strong>E-posta:</strong> support@sbclabs.dev</li>
+      <li><strong>Geliştirici:</strong> SBC Labs</li>
+    </ul>
+  </div>
+
+</main>
+
+<footer>
+  <p>© 2026 SBC Labs. Tüm hakları saklıdır.</p>
+  <p style="margin-top:6px;">
+    <a href="mailto:support@sbclabs.dev">support@sbclabs.dev</a>
+  </p>
+</footer>
+
+</body>
+</html>
